@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/insert_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT RANDOM STUDENT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/insert_delay_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT RANDOM STUDENT WITH DELAY 3s, \n (open home screen now to make a pause activity before insert/n after 3s, show app again)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/insert_student" />
+
+    <Button
+        android:id="@+id/to_another_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO ANOTHER SCREEN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_delay_student" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
